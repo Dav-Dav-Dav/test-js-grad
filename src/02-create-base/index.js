@@ -5,4 +5,5 @@
 
 module.exports = function createBase(integer) {
   // TODO
+  return (numberToAdd) => {return integer + numberToAdd}
 };

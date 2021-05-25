@@ -1,3 +1,5 @@
+const axios = require('axios').default;
+
 /**
  * Fetch and return information about LukeSkywalker from this endpoint: https://swapi.dev/api/people/1/
 
@@ -36,4 +38,7 @@ The expected output is:
 
 module.exports = async function fetchLukeSkywalker() {
   // TODO
+    const res = await axios.get('https://swapi.dev/api/people/1/');
+    const { data } = await res;
+    return data;
 };
